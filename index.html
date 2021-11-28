@@ -78,8 +78,14 @@
     </section>
 
     <footer>
-        <p>Copyright. 2021 - Todos os direitos reservados. Feito com amor por <span>Diego Costa</span>.</p>
+        <p>Copyright. <span class="data"></span> - Todos os direitos reservados. Feito com amor por <span>Diego Costa</span>.</p>
     </footer>
+
+    <script>
+        var data = new Date().getFullYear();
+        const slctdata = document.querySelector(".data");
+        slctdata.innerHTML = data;
+    </script>
 
 </body>
 
