@@ -1,0 +1,125 @@
+#header-container-contato {
+    max-width: 100vw;
+    box-sizing: border-box;
+    background: url(../imagens/contatoheader.jpg) no-repeat center center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.capita-title {
+    height: 200px;
+    margin: 100px 0 0 100px;
+    position: relative;
+    top: 100px;
+    left: 60px;
+}
+
+#container-contato {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+#container-contato h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, Open-sans, Open Sans, Helvetica;
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#container-contato h2::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 3px;
+    background-color: #c8332d;
+    margin: 0 auto;
+    bottom: -10px;
+}
+
+#container-contato p {
+    width: 60ch;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Poppins, Open-sans, Open Sans, Helvetica;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.35;
+    margin-top: 40px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+#container-contato form {
+    margin: 0 auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0 20px;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 22px;
+    display: grid;
+}
+
+form input:last-child {
+    margin-bottom: 0;
+}
+
+form input::placeholder {
+    color: #ccc;
+    font-family: Poppins, Open-sans, Open Sans, Helvetica;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.675rem;
+    line-height: 1;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+form input:last-child {
+    padding-bottom: 0;
+}
+
+form button {
+    grid-column: span 2;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-family: Poppins, Open-sans, Open Sans, Helvetica;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+    background-image: linear-gradient(#FF7165, #c8332d); 
+    cursor: pointer;
+}
+
+form textarea {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+form textarea::placeholder {
+    color: #ccc;
+    font-family: Poppins, Open-sans, Open Sans, Helvetica;
+    font-weight: 600;
+    font-size: 0.675rem;
+    padding: 10px 0 0 10px;
+    text-transform: initial;
+}
