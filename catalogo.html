@@ -21,15 +21,16 @@
           
             <nav id="nav-header">
                
-                <ul>
-                  
-                    <li><a href="/">Home</a></li>
-                  
-                    <li><a href="/catalogo.html" class="ativo">Catálogo</a></li>
-                  
-                    <li><a href="/contato.html">Contato</a></li>
+                <nav id="nav-header">
                
-                </ul>
+                    <ul>
+                      
+                        <li><a href="/projeto-fullture-html-css/index.html">Home</a></li>
+                      
+                        <li><a href="/projeto-fullture-html-css/catalogo.html"  class="ativo">Catálogo</a></li>
+                      
+                        <li><a href="/projeto-fullture-html-css/contato.html">Contato</a></li>
+                    </ul>
             
             </nav>
        
@@ -98,9 +99,15 @@
 
      </main>
 
-    <footer>
-        <p>Copyright. 2021 - Todos os direitos reservados. Feito com amor por Diego Costa.</p>
+     <footer>
+        <p>Copyright. <span class="data"></span> - Todos os direitos reservados. Feito com amor por <span>Diego Costa</span>.</p>
     </footer>
+
+    <script>
+        var data = new Date().getFullYear();
+        const slctdata = document.querySelector(".data");
+        slctdata.innerHTML = data;
+    </script>
 
 </body>
 
